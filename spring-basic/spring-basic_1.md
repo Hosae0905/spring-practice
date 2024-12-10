@@ -118,6 +118,7 @@
       - MemberRepository = new MemoryMemberRepository();    --> DIP 위반한 코드
     - MemberRepository 인터페이스에 의존해야 하는데 MemoryMemberRepository 구현체도 같이 의존하고 있게 된다.
 - 객체 지향의 핵심은 다형성이다.
+- 
 - 하지만 다형성 만으로는 쉽게 부품을 갈아 끼우듯이 개발할 수 없다.
 - 다형성 만으로는 구현 객체를 변경할 때 클라이언트 코드도 함께 변경된다.
 - 다형성 만으로는 OCP, DIP를 지킬 수 없다.
