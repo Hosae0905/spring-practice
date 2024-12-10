@@ -1,7 +1,9 @@
 package project.springbasic.order;
 
 import org.assertj.core.api.Assertions;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import project.springbasic.AppConfig;
 import project.springbasic.member.Grade;
 import project.springbasic.member.Member;
 import project.springbasic.member.MemberService;
@@ -9,8 +11,22 @@ import project.springbasic.member.MemberServiceImpl;
 
 public class OrderServiceTest {
 
-    MemberService memberService = new MemberServiceImpl();
-    OrderService orderService = new OrderServiceImpl();
+//    MemberService memberService = new MemberServiceImpl();
+//    OrderService orderService = new OrderServiceImpl();
+
+    /**
+     * AppConfig 클래스를 통한 의존성 주입 후 테스트 실행
+     */
+
+    MemberService memberService;
+    OrderService orderService;
+
+    @BeforeEach
+    public void beforeEach() {
+        AppConfig appConfig = new AppConfig();
+        memberService = appConfig.memberService();
+        orderService = appConfig.orderService();
+    }
 
     @Test
     void createOrder() {
