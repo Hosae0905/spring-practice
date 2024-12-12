@@ -18,6 +18,25 @@ import project.springbasic.order.OrderServiceImpl;
 @Configuration
 public class AppConfig {
 
+    // @Bean memberService --> new MemoryMemberRepository()
+    // @Bean orderService --> new MemoryMemberRepository()
+    // 이렇게 하면 싱글톤이 깨질까?
+
+    /**
+     * 메서드 실행 순서(꼭 이렇게 순서대로 되는 것은 아님)
+     * [예측]
+     * call AppConfig.memberService
+     * call AppConfig.memberRepository
+     * call AppConfig.memberRepository
+     * call AppConfig.orderService
+     * call AppConfig.memberRepository
+     *
+     * [실제]
+     * call AppConfig.memberService
+     * call AppConfig.memberRepository
+     * call AppConfig.orderService
+     */
+
     /**
      * 생성자 주입을 통해서 책임을 분리한다.
      * @return MemberServiceImpl 객체
@@ -36,6 +55,7 @@ public class AppConfig {
 
     @Bean
     public MemberService memberService() {
+        System.out.println("call AppConfig.memberService");
         return new MemberServiceImpl(memberRepository());
     }
 
@@ -51,6 +71,7 @@ public class AppConfig {
 
     @Bean
     public MemberRepository memberRepository() {
+        System.out.println("call AppConfig.memberRepository");
         return new MemoryMemberRepository();
     }
 
@@ -72,6 +93,7 @@ public class AppConfig {
 
     @Bean
     public OrderService orderService() {
+        System.out.println("call AppConfig.orderService");
         return new OrderServiceImpl(memberRepository(), discountPolicy());
     }
 
