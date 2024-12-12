@@ -10,5 +10,10 @@
         <module name="spring-basic.main" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="spring-basic" target="17" />
+      <module name="spring-basic.main" target="17" />
+      <module name="spring-basic.test" target="17" />
+    </bytecodeTargetLevel>
   </component>
 </project>
