@@ -1,5 +1,7 @@
 package project.springbasic.order;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 import project.springbasic.discount.DiscountPolicy;
 import project.springbasic.discount.FixDiscountPolicy;
 import project.springbasic.discount.RateDiscountPolicy;
@@ -7,6 +9,7 @@ import project.springbasic.member.Member;
 import project.springbasic.member.MemberRepository;
 import project.springbasic.member.MemoryMemberRepository;
 
+@Component
 public class OrderServiceImpl implements OrderService {
 
 //    private final MemberRepository memberRepository = new MemoryMemberRepository();
@@ -21,14 +24,39 @@ public class OrderServiceImpl implements OrderService {
 
 //    private DiscountPolicy discountPolicy;      // 인터페이스만 의존하게 변경 --> 하지만 구현체가 없기 때문에 널 포인터 예외 발생
 
-    private final MemberRepository memberRepository;
-    private final DiscountPolicy discountPolicy;
+    // 의존 관계 주입을 필드에서 직접 주입할 수 있다.
+//    @Autowired private MemberRepository memberRepository;
+//    @Autowired private DiscountPolicy discountPolicy;
+
+    // 수정자 주입 방식
+//    private MemberRepository memberRepository;
+//    private DiscountPolicy discountPolicy;
+//
+//    @Autowired
+//    public void setDiscountPolicy(DiscountPolicy discountPolicy) {
+//        this.discountPolicy = discountPolicy;
+//    }
+//
+//    @Autowired
+//    public void setMemberRepository(MemberRepository memberRepository) {
+//        this.memberRepository = memberRepository;
+//    }
 
     /**
      * 생성자를 주입해서 인터페이스만 의존하게 만든다.
      * @param memberRepository
      * @param discountPolicy
      */
+
+    private final MemberRepository memberRepository;
+    private final DiscountPolicy discountPolicy;
+
+//    public OrderServiceImpl(MemberRepository memberRepository, DiscountPolicy discountPolicy) {
+//        this.memberRepository = memberRepository;
+//        this.discountPolicy = discountPolicy;
+//    }
+
+//    @Autowired        // 생성자가 1개면 생략 가능
     public OrderServiceImpl(MemberRepository memberRepository, DiscountPolicy discountPolicy) {
         this.memberRepository = memberRepository;
         this.discountPolicy = discountPolicy;
