@@ -1,7 +1,9 @@
 package project.springbasic.order;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
+import project.springbasic.annotation.MainDiscountPolicy;
 import project.springbasic.discount.DiscountPolicy;
 import project.springbasic.discount.FixDiscountPolicy;
 import project.springbasic.discount.RateDiscountPolicy;
@@ -56,12 +58,39 @@ public class OrderServiceImpl implements OrderService {
 //        this.discountPolicy = discountPolicy;
 //    }
 
-//    @Autowired        // 생성자가 1개면 생략 가능
+    /*@Autowired        // 생성자가 1개면 생략 가능
     public OrderServiceImpl(MemberRepository memberRepository, DiscountPolicy discountPolicy) {
         this.memberRepository = memberRepository;
         this.discountPolicy = discountPolicy;
-    }
+    }*/
 
+    // 빈 이름이 중복될 경우 타입이 아닌 파라미터 명과 필드 명을 보고 빈을 생성해준다.
+    /*@Autowired
+    public OrderServiceImpl(MemberRepository memberRepository, DiscountPolicy rateDiscountPolicy) {
+        this.memberRepository = memberRepository;
+        this.discountPolicy = rateDiscountPolicy;
+    }*/
+
+    // @Qualifier 방식을 활용한 빈 중복 해결 방법
+    /*@Autowired
+    public OrderServiceImpl(MemberRepository memberRepository, @Qualifier("mainDiscountPolicy") DiscountPolicy discountPolicy) {
+        this.memberRepository = memberRepository;
+        this.discountPolicy = discountPolicy;
+    }*/
+
+    // @Primary를 사용할 경우
+    /*@Autowired
+    public OrderServiceImpl(MemberRepository memberRepository, DiscountPolicy discountPolicy) {
+        this.memberRepository = memberRepository;
+        this.discountPolicy = discountPolicy;
+    }*/
+
+    // 애노테이션을 직접 만들어서 사용할 경우
+    @Autowired
+    public OrderServiceImpl(MemberRepository memberRepository, @MainDiscountPolicy DiscountPolicy discountPolicy) {
+        this.memberRepository = memberRepository;
+        this.discountPolicy = discountPolicy;
+    }
 
     @Override
     public Order createOrder(Long memberId, String itemName, int itemPrice) {
