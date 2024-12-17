@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="edf7b05b-6be1-4f49-88dd-96d92c0a0901" name="Changes" comment="[ADD] 스타일 및 메시지 국제화 적용">
+      <change afterPath="$PROJECT_DIR$/spring-mvc/spring-mvc1.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-mvc/src/main/java/project/springmvc/web/validation/ValidationItemControllerV2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-mvc/src/main/resources/templates/validation/v2/addForm.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-mvc/src/main/resources/templates/validation/v2/editForm.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-mvc/src/main/resources/templates/validation/v2/item.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-mvc/src/main/resources/templates/validation/v2/items.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-mvc/src/main/java/project/springmvc/web/validation/ValidationItemControllerV1.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mvc/src/main/java/project/springmvc/web/validation/ValidationItemControllerV1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-mvc/src/main/resources/templates/validation/v1/addForm.html" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mvc/src/main/resources/templates/validation/v1/addForm.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/spring-basic">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/spring-mvc">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2qKfPttrOwLLgXDPsoxMIjJYaKp" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.Build spring-mvc.executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.SpringMvcApplication.executor": "Run",
+    "git-widget-placeholder": "spring/mvc",
+    "ignore.virus.scanning.warn.message": "true",
+    "jdk.selected.JAVA_MODULE": "corretto-17",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/hosin/Desktop/spring-practice/spring-mvc/src/main/resources/templates/validation",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\hosin\Desktop\spring-practice\spring-mvc\src\main\resources\templates\validation" />
+      <recent name="C:\Users\hosin\Desktop\spring-practice\spring-mvc\src\main\resources" />
+      <recent name="C:\Users\hosin\Desktop\spring-practice\spring-mvc\src\main\resources\templates" />
+      <recent name="C:\Users\hosin\Desktop\spring-practice\spring-mvc\src\main\resources\static" />
+      <recent name="C:\Users\hosin\Desktop\spring-practice\spring-mvc\src\main\java\project\springmvc" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="project.springmvc.web.validation" />
+      <recent name="project.springmvc" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.SpringMvcApplication">
+    <configuration name="PrototypeTest.prototypeBeanFind" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/spring-basic" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;project.springbasic.scope.PrototypeTest.prototypeBeanFind&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="SingletonTest.singletonBeanFind" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/spring-basic" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;project.springbasic.scope.SingletonTest.singletonBeanFind&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="SingletonWithPrototypeTest1" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/spring-basic" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;project.springbasic.scope.SingletonWithPrototypeTest1&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="SingletonWithPrototypeTest1.prototypeFind" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/spring-basic" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;project.springbasic.scope.SingletonWithPrototypeTest1.prototypeFind&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="SingletonWithPrototypeTest1.singletonClientUsePrototype" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/spring-basic" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;project.springbasic.scope.SingletonWithPrototypeTest1.singletonClientUsePrototype&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="SpringBasicApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="spring-basic.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="project.springbasic.SpringBasicApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringMvcApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="spring-mvc.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="project.springmvc.SpringMvcApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.SingletonWithPrototypeTest1.singletonClientUsePrototype" />
+        <item itemvalue="Gradle.SingletonWithPrototypeTest1.prototypeFind" />
+        <item itemvalue="Gradle.SingletonWithPrototypeTest1" />
+        <item itemvalue="Gradle.SingletonTest.singletonBeanFind" />
+        <item itemvalue="Gradle.PrototypeTest.prototypeBeanFind" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-11.0.22-corretto-11.0.22-4caba194b151-868cef46" />
+        <option value="jdk-17.0.10-corretto-17.0.10-4caba194b151-5cd809f4" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="edf7b05b-6be1-4f49-88dd-96d92c0a0901" name="Changes" comment="" />
+      <created>1734416167587</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1734416167587</updated>
+      <workItem from="1734416169658" duration="15000" />
+      <workItem from="1734416192850" duration="66000" />
+      <workItem from="1734416270263" duration="79000" />
+      <workItem from="1734416356310" duration="18000" />
+      <workItem from="1734416385448" duration="675000" />
+      <workItem from="1734417076464" duration="6896000" />
+    </task>
+    <task id="LOCAL-00001" summary="[Init] 스프링 MVC 프로젝트 생성">
+      <option name="closed" value="true" />
+      <created>1734417988978</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1734417988978</updated>
+    </task>
+    <task id="LOCAL-00002" summary="[ADD] 스타일 및 메시지 국제화 적용">
+      <option name="closed" value="true" />
+      <created>1734418727222</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1734418727222</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="[Init] 스프링 MVC 프로젝트 생성" />
+    <MESSAGE value="[ADD] 스타일 및 메시지 국제화 적용" />
+    <option name="LAST_COMMIT_MESSAGE" value="[ADD] 스타일 및 메시지 국제화 적용" />
+  </component>
+</project>
