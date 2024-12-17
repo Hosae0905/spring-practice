@@ -4,9 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="edf7b05b-6be1-4f49-88dd-96d92c0a0901" name="Changes" comment="[Init] 스프링 MVC 프로젝트 생성">
+    <list default="true" id="edf7b05b-6be1-4f49-88dd-96d92c0a0901" name="Changes" comment="[ADD] 스타일 및 메시지 국제화 적용">
       <change afterPath="$PROJECT_DIR$/spring-mvc/spring-mvc1.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-mvc/src/main/java/project/springmvc/web/validation/ValidationItemControllerV2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-mvc/src/main/resources/templates/validation/v2/addForm.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-mvc/src/main/resources/templates/validation/v2/editForm.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-mvc/src/main/resources/templates/validation/v2/item.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-mvc/src/main/resources/templates/validation/v2/items.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-mvc/src/main/java/project/springmvc/web/validation/ValidationItemControllerV1.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mvc/src/main/java/project/springmvc/web/validation/ValidationItemControllerV1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-mvc/src/main/resources/templates/validation/v1/addForm.html" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mvc/src/main/resources/templates/validation/v1/addForm.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,6 +64,10 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Gradle.Build spring-mvc.executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "Spring Boot.SpringMvcApplication.executor": "Run",
@@ -64,7 +75,7 @@
     "ignore.virus.scanning.warn.message": "true",
     "jdk.selected.JAVA_MODULE": "corretto-17",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/hosin/Desktop/spring-practice/spring-mvc/src/main/java/project/springmvc",
+    "last_opened_file_path": "C:/Users/hosin/Desktop/spring-practice/spring-mvc/src/main/resources/templates/validation",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -79,11 +90,14 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\hosin\Desktop\spring-practice\spring-mvc\src\main\java\project\springmvc" />
+      <recent name="C:\Users\hosin\Desktop\spring-practice\spring-mvc\src\main\resources\templates\validation" />
+      <recent name="C:\Users\hosin\Desktop\spring-practice\spring-mvc\src\main\resources" />
       <recent name="C:\Users\hosin\Desktop\spring-practice\spring-mvc\src\main\resources\templates" />
       <recent name="C:\Users\hosin\Desktop\spring-practice\spring-mvc\src\main\resources\static" />
+      <recent name="C:\Users\hosin\Desktop\spring-practice\spring-mvc\src\main\java\project\springmvc" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="project.springmvc.web.validation" />
       <recent name="project.springmvc" />
     </key>
   </component>
@@ -253,7 +267,7 @@
       <workItem from="1734416270263" duration="79000" />
       <workItem from="1734416356310" duration="18000" />
       <workItem from="1734416385448" duration="675000" />
-      <workItem from="1734417076464" duration="1355000" />
+      <workItem from="1734417076464" duration="6896000" />
     </task>
     <task id="LOCAL-00001" summary="[Init] 스프링 MVC 프로젝트 생성">
       <option name="closed" value="true" />
@@ -263,7 +277,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734417988978</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="[ADD] 스타일 및 메시지 국제화 적용">
+      <option name="closed" value="true" />
+      <created>1734418727222</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1734418727222</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -271,6 +293,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="[Init] 스프링 MVC 프로젝트 생성" />
-    <option name="LAST_COMMIT_MESSAGE" value="[Init] 스프링 MVC 프로젝트 생성" />
+    <MESSAGE value="[ADD] 스타일 및 메시지 국제화 적용" />
+    <option name="LAST_COMMIT_MESSAGE" value="[ADD] 스타일 및 메시지 국제화 적용" />
   </component>
 </project>
