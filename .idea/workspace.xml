@@ -4,16 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="edf7b05b-6be1-4f49-88dd-96d92c0a0901" name="Changes" comment="[ADD] 스타일 및 메시지 국제화 적용">
-      <change afterPath="$PROJECT_DIR$/spring-mvc/spring-mvc1.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-mvc/src/main/java/project/springmvc/web/validation/ValidationItemControllerV2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-mvc/src/main/resources/templates/validation/v2/addForm.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-mvc/src/main/resources/templates/validation/v2/editForm.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-mvc/src/main/resources/templates/validation/v2/item.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-mvc/src/main/resources/templates/validation/v2/items.html" afterDir="false" />
+    <list default="true" id="edf7b05b-6be1-4f49-88dd-96d92c0a0901" name="Changes" comment="[ADD] 스프링 MVC 2편 - 백엔드 웹 개발 활용 기술 정리&#10;&#10;- 검증1 - Validation 정리">
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-mvc/src/main/java/project/springmvc/web/validation/ItemValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-mvc/src/main/resources/errors.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-mvc/src/test/java/project/springmvc/validation/MessageCodesResolverTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-mvc/src/main/java/project/springmvc/web/validation/ValidationItemControllerV1.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mvc/src/main/java/project/springmvc/web/validation/ValidationItemControllerV1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-mvc/src/main/resources/templates/validation/v1/addForm.html" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mvc/src/main/resources/templates/validation/v1/addForm.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-mvc/spring-mvc1.md" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mvc/spring-mvc1.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-mvc/src/main/java/project/springmvc/web/validation/ValidationItemControllerV2.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mvc/src/main/java/project/springmvc/web/validation/ValidationItemControllerV2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-mvc/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mvc/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-mvc/src/main/resources/templates/validation/v2/addForm.html" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mvc/src/main/resources/templates/validation/v2/addForm.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,14 +35,29 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
+        <task path="$PROJECT_DIR$/spring-mvc">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
-            <expand />
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="spring-mvc" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
             <select />
           </tree_state>
         </projects_view>
       </state>
     </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -64,12 +80,16 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Gradle.Build spring-mvc.executor": "Run",
+    "Gradle.MessageCodesResolverTest.executor": "Run",
+    "Gradle.MessageCodesResolverTest.messageCodesResolverField.executor": "Run",
+    "Gradle.MessageCodesResolverTest.messageCodesResolverObject.executor": "Run",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Spring Boot.SpringMvcApplication.executor": "Run",
     "git-widget-placeholder": "spring/mvc",
     "ignore.virus.scanning.warn.message": "true",
@@ -84,7 +104,7 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
+    "settings.editor.selected.configurable": "File.Encoding",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -102,10 +122,10 @@
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.SpringMvcApplication">
-    <configuration name="PrototypeTest.prototypeBeanFind" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="MessageCodesResolverTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/spring-basic" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/spring-mvc" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" value="" />
         <option name="taskDescriptions">
@@ -115,7 +135,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;project.springbasic.scope.PrototypeTest.prototypeBeanFind&quot;" />
+            <option value="&quot;project.springmvc.validation.MessageCodesResolverTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -126,10 +146,10 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="SingletonTest.singletonBeanFind" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="MessageCodesResolverTest.messageCodesResolverField" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/spring-basic" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/spring-mvc" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" value="" />
         <option name="taskDescriptions">
@@ -139,7 +159,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;project.springbasic.scope.SingletonTest.singletonBeanFind&quot;" />
+            <option value="&quot;project.springmvc.validation.MessageCodesResolverTest.messageCodesResolverField&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -150,10 +170,10 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="SingletonWithPrototypeTest1" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="MessageCodesResolverTest.messageCodesResolverObject" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/spring-basic" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/spring-mvc" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" value="" />
         <option name="taskDescriptions">
@@ -163,7 +183,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;project.springbasic.scope.SingletonWithPrototypeTest1&quot;" />
+            <option value="&quot;project.springmvc.validation.MessageCodesResolverTest.messageCodesResolverObject&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -238,11 +258,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.MessageCodesResolverTest" />
+        <item itemvalue="Gradle.MessageCodesResolverTest.messageCodesResolverField" />
+        <item itemvalue="Gradle.MessageCodesResolverTest.messageCodesResolverObject" />
         <item itemvalue="Gradle.SingletonWithPrototypeTest1.singletonClientUsePrototype" />
         <item itemvalue="Gradle.SingletonWithPrototypeTest1.prototypeFind" />
-        <item itemvalue="Gradle.SingletonWithPrototypeTest1" />
-        <item itemvalue="Gradle.SingletonTest.singletonBeanFind" />
-        <item itemvalue="Gradle.PrototypeTest.prototypeBeanFind" />
       </list>
     </recent_temporary>
   </component>
@@ -267,7 +287,9 @@
       <workItem from="1734416270263" duration="79000" />
       <workItem from="1734416356310" duration="18000" />
       <workItem from="1734416385448" duration="675000" />
-      <workItem from="1734417076464" duration="6896000" />
+      <workItem from="1734417076464" duration="8057000" />
+      <workItem from="1734441568512" duration="1422000" />
+      <workItem from="1734499864766" duration="12156000" />
     </task>
     <task id="LOCAL-00001" summary="[Init] 스프링 MVC 프로젝트 생성">
       <option name="closed" value="true" />
@@ -285,7 +307,23 @@
       <option name="project" value="LOCAL" />
       <updated>1734418727222</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="[Feat] 스프링 MVC 2편 - 백엔드 웹 개발 활용 기술 공부&#10;&#10;- 검증1 - Validation 공부">
+      <option name="closed" value="true" />
+      <created>1734429482935</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1734429482935</updated>
+    </task>
+    <task id="LOCAL-00004" summary="[ADD] 스프링 MVC 2편 - 백엔드 웹 개발 활용 기술 정리&#10;&#10;- 검증1 - Validation 정리">
+      <option name="closed" value="true" />
+      <created>1734429509169</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1734429509169</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -294,6 +332,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="[Init] 스프링 MVC 프로젝트 생성" />
     <MESSAGE value="[ADD] 스타일 및 메시지 국제화 적용" />
-    <option name="LAST_COMMIT_MESSAGE" value="[ADD] 스타일 및 메시지 국제화 적용" />
+    <MESSAGE value="[Feat] 스프링 MVC 2편 - 백엔드 웹 개발 활용 기술 공부&#10;&#10;- 검증1 - Validation 공부" />
+    <MESSAGE value="[ADD] 스프링 MVC 2편 - 백엔드 웹 개발 활용 기술 정리&#10;&#10;- 검증1 - Validation 정리" />
+    <option name="LAST_COMMIT_MESSAGE" value="[ADD] 스프링 MVC 2편 - 백엔드 웹 개발 활용 기술 정리&#10;&#10;- 검증1 - Validation 정리" />
   </component>
 </project>
