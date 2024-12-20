@@ -5,16 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="edf7b05b-6be1-4f49-88dd-96d92c0a0901" name="Changes" comment="[Feat] 스프링 MVC 2편 - 백엔드 웹 개발 활용 기술 공부&#10;&#10;- 검증2 - Bean Validation 공부">
-      <change afterPath="$PROJECT_DIR$/spring-mvc/src/main/java/project/springmvc/domain/item/SaveCheck.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-mvc/src/main/java/project/springmvc/domain/item/UpdateCheck.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-mvc/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mvc/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-mvc/spring-mvc2.md" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mvc/spring-mvc2.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-mvc/src/main/java/project/springmvc/domain/item/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mvc/src/main/java/project/springmvc/domain/item/Item.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-mvc/src/main/java/project/springmvc/web/validation/ItemValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mvc/src/main/java/project/springmvc/web/validation/ItemValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-mvc/src/main/java/project/springmvc/web/validation/ValidationItemControllerV3.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mvc/src/main/java/project/springmvc/web/validation/ValidationItemControllerV3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-mvc/src/main/resources/errors.properties" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mvc/src/main/resources/errors.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-mvc/src/main/resources/templates/validation/v3/editForm.html" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mvc/src/main/resources/templates/validation/v3/editForm.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -362,7 +353,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734615779364</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="[Feat] 스프링 MVC 2편 - 백엔드 웹 개발 활용 기술 공부&#10;&#10;- 검증2 - Bean Validation 공부">
+      <option name="closed" value="true" />
+      <created>1734696755865</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1734696755865</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
