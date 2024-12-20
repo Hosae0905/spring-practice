@@ -34,4 +34,31 @@
 - Bean Validator는 바인딩에 실패한 필드는 Bean Validation을 적용하지 않는다.
 - 생각해보면 타입 변환에 성공해서 바인딩에 성공한 필드여야 Bean Validation 적용이 의미가 있다.
 - 값이 정상적으로 들어와야 의미가 있다는 뜻
-- 
+
+### Bean Validation - 에러 코드
+- Bean Validation이 기본으로 제공하는 오류 메시지를 좀 더 자세히 변경하고 싶으면 어떻게 하면 될까?
+- bindingResult에 등록된 검증 오류 코드를 보면 애노테이션 이름으로 등록되는 것을 알 수 있다.
+- 애노테이션 이름의 오류 코드를 기반으로 MessageCodesResolver를 통해 다양한 메시지 코드가 순서대로 생성된다.
+- Bean Validation 메시지 찾는 순서
+  - 생성된 메시지 코드 순서대로 messageSource에서 메시지 찾기
+  - 애노테이션의 message 속성 사용
+  - 라이브러리가 제공하는 기본 값 사용
+
+### Bean Validation - 오브젝트 오류
+- 필드에 들어가는 FieldError가 아닌 ObjectError는 어떻게 처리할 수 있을까?
+- @ScriptAssert()를 사용하면 된다.
+- 실제 사용하기에는 제약이 많고 복잡하다.
+- 권장하지 않는 방법이고 그냥 자바 코드로 하자.
+
+### Bean Validation - 한계
+- 여러 기능에서 Bean Validation을 사용할 경우, 예를 들어 등록과 수정에서 검증을 사용할 경우 검증 조건의 충돌이 발생할 수 있다.
+- 여러 기능에서 같은 Bean Validation을 적용할 수 없다.
+- 어떻게 해결할 수 있을까?
+
+### Bean Validation - groups
+- 동일한 모델 객체를 각각 다르게 검증하는 방법 2가지
+  - Bean Validation의 groups 기능을 사용한다.
+  - 같은 폼 전송을 위한 별도의 모델 객체를 만들어서 사용한다.
+- @Valid에는 groups 기능이 없다.
+- groups 기능을 사용해보니 복잡도가 올라간다.
+- 실무에서는 주로 등록용 폼 객체와 수정용 폼 객체를 분리해서 사용한다.

@@ -4,19 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="edf7b05b-6be1-4f49-88dd-96d92c0a0901" name="Changes" comment="[ADD] 스프링 MVC 2편 - 백엔드 웹 개발 활용 기술 정리&#10;&#10;- 검증1 - Validation 정리">
-      <change afterPath="$PROJECT_DIR$/.idea/modules/spring-mvc.main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-mvc/spring-mvc2.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-mvc/src/main/java/project/springmvc/web/validation/ValidationItemControllerV3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-mvc/src/main/resources/templates/validation/v3/addForm.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-mvc/src/main/resources/templates/validation/v3/editForm.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-mvc/src/main/resources/templates/validation/v3/item.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-mvc/src/main/resources/templates/validation/v3/items.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-mvc/src/test/java/project/springmvc/validation/BeanValidationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-mvc/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mvc/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-mvc/src/main/java/project/springmvc/domain/item/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mvc/src/main/java/project/springmvc/domain/item/Item.java" afterDir="false" />
+    <list default="true" id="edf7b05b-6be1-4f49-88dd-96d92c0a0901" name="Changes" comment="[Feat] 스프링 MVC 2편 - 백엔드 웹 개발 활용 기술 공부&#10;&#10;- 검증2 - Bean Validation 공부">
+      <change beforePath="$PROJECT_DIR$/spring-mvc/spring-mvc2.md" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mvc/spring-mvc2.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,6 +58,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -90,38 +80,38 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Gradle.BeanValidationTest.beanValidation.executor": "Run",
-    "Gradle.Build spring-mvc.executor": "Run",
-    "Gradle.MessageCodesResolverTest.executor": "Run",
-    "Gradle.MessageCodesResolverTest.messageCodesResolverField.executor": "Run",
-    "Gradle.MessageCodesResolverTest.messageCodesResolverObject.executor": "Run",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Spring Boot.SpringMvcApplication.executor": "Run",
-    "git-widget-placeholder": "spring/mvc",
-    "ignore.virus.scanning.warn.message": "true",
-    "jdk.selected.JAVA_MODULE": "corretto-17",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/hosin/Desktop/spring-practice/spring-mvc/src/main/resources/templates/validation",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "File.Encoding",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.BeanValidationTest.beanValidation.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build spring-mvc.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.MessageCodesResolverTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.MessageCodesResolverTest.messageCodesResolverField.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.MessageCodesResolverTest.messageCodesResolverObject.executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Spring Boot.SpringMvcApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;spring/mvc&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;corretto-17&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/hosin/Desktop/spring-practice/spring-mvc/src/main/resources/templates/validation&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;File.Encoding&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\hosin\Desktop\spring-practice\spring-mvc\src\main\resources\templates\validation" />
@@ -304,7 +294,8 @@
       <workItem from="1734417076464" duration="8057000" />
       <workItem from="1734441568512" duration="1422000" />
       <workItem from="1734499864766" duration="12546000" />
-      <workItem from="1734607193747" duration="5229000" />
+      <workItem from="1734607193747" duration="5726000" />
+      <workItem from="1734682240743" duration="5156000" />
     </task>
     <task id="LOCAL-00001" summary="[Init] 스프링 MVC 프로젝트 생성">
       <option name="closed" value="true" />
@@ -354,7 +345,23 @@
       <option name="project" value="LOCAL" />
       <updated>1734524364954</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="[Feat] 스프링 MVC 2편 - 백엔드 웹 개발 활용 기술 공부&#10;&#10;- 검증2 - Bean Validation 공부">
+      <option name="closed" value="true" />
+      <created>1734615779364</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1734615779364</updated>
+    </task>
+    <task id="LOCAL-00008" summary="[Feat] 스프링 MVC 2편 - 백엔드 웹 개발 활용 기술 공부&#10;&#10;- 검증2 - Bean Validation 공부">
+      <option name="closed" value="true" />
+      <created>1734696755865</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1734696755865</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -366,6 +373,7 @@
     <MESSAGE value="[Feat] 스프링 MVC 2편 - 백엔드 웹 개발 활용 기술 공부&#10;&#10;- 검증1 - Validation 공부" />
     <MESSAGE value="[Feat] 스프링 MVC 2편 - 백엔드 웹 개발 활용 기술 정리&#10;&#10;- 검증1 - Validation 정리" />
     <MESSAGE value="[ADD] 스프링 MVC 2편 - 백엔드 웹 개발 활용 기술 정리&#10;&#10;- 검증1 - Validation 정리" />
-    <option name="LAST_COMMIT_MESSAGE" value="[ADD] 스프링 MVC 2편 - 백엔드 웹 개발 활용 기술 정리&#10;&#10;- 검증1 - Validation 정리" />
+    <MESSAGE value="[Feat] 스프링 MVC 2편 - 백엔드 웹 개발 활용 기술 공부&#10;&#10;- 검증2 - Bean Validation 공부" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Feat] 스프링 MVC 2편 - 백엔드 웹 개발 활용 기술 공부&#10;&#10;- 검증2 - Bean Validation 공부" />
   </component>
 </project>
