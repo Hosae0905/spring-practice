@@ -4,8 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="edf7b05b-6be1-4f49-88dd-96d92c0a0901" name="Changes" comment="[Feat] 스프링 MVC 2편 - 백엔드 웹 개발 활용 기술 공부&#10;&#10;- 검증2 - Bean Validation 공부">
+    <list default="true" id="edf7b05b-6be1-4f49-88dd-96d92c0a0901" name="Changes" comment="[ADD] 스프링 MVC 2편 - 백엔드 웹 개발 활용 기술 정리&#10;&#10;- 검증2 - Bean Validation 정리">
+      <change afterPath="$PROJECT_DIR$/spring-mvc/src/main/java/project/springmvc/web/validation/ValidationItemApiController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-mvc/src/main/java/project/springmvc/web/validation/ValidationItemControllerV4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-mvc/src/main/java/project/springmvc/web/validation/form/ItemSaveForm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-mvc/src/main/java/project/springmvc/web/validation/form/ItemUpdateForm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-mvc/src/main/resources/templates/validation/v4/addForm.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-mvc/src/main/resources/templates/validation/v4/editForm.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-mvc/src/main/resources/templates/validation/v4/item.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-mvc/src/main/resources/templates/validation/v4/items.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-mvc/spring-mvc2.md" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mvc/spring-mvc2.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-mvc/src/main/java/project/springmvc/domain/item/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mvc/src/main/java/project/springmvc/domain/item/Item.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,8 +67,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -121,6 +131,7 @@
       <recent name="C:\Users\hosin\Desktop\spring-practice\spring-mvc\src\main\resources\static" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="project.springmvc.web.validation.form" />
       <recent name="project.springmvc.web.validation" />
       <recent name="project.springmvc" />
     </key>
@@ -295,7 +306,8 @@
       <workItem from="1734441568512" duration="1422000" />
       <workItem from="1734499864766" duration="12546000" />
       <workItem from="1734607193747" duration="5726000" />
-      <workItem from="1734682240743" duration="5156000" />
+      <workItem from="1734682240743" duration="5181000" />
+      <workItem from="1734758809017" duration="3990000" />
     </task>
     <task id="LOCAL-00001" summary="[Init] 스프링 MVC 프로젝트 생성">
       <option name="closed" value="true" />
@@ -361,7 +373,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734696755865</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="[ADD] 스프링 MVC 2편 - 백엔드 웹 개발 활용 기술 정리&#10;&#10;- 검증2 - Bean Validation 정리">
+      <option name="closed" value="true" />
+      <created>1734696800889</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1734696800889</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -374,6 +394,7 @@
     <MESSAGE value="[Feat] 스프링 MVC 2편 - 백엔드 웹 개발 활용 기술 정리&#10;&#10;- 검증1 - Validation 정리" />
     <MESSAGE value="[ADD] 스프링 MVC 2편 - 백엔드 웹 개발 활용 기술 정리&#10;&#10;- 검증1 - Validation 정리" />
     <MESSAGE value="[Feat] 스프링 MVC 2편 - 백엔드 웹 개발 활용 기술 공부&#10;&#10;- 검증2 - Bean Validation 공부" />
-    <option name="LAST_COMMIT_MESSAGE" value="[Feat] 스프링 MVC 2편 - 백엔드 웹 개발 활용 기술 공부&#10;&#10;- 검증2 - Bean Validation 공부" />
+    <MESSAGE value="[ADD] 스프링 MVC 2편 - 백엔드 웹 개발 활용 기술 정리&#10;&#10;- 검증2 - Bean Validation 정리" />
+    <option name="LAST_COMMIT_MESSAGE" value="[ADD] 스프링 MVC 2편 - 백엔드 웹 개발 활용 기술 정리&#10;&#10;- 검증2 - Bean Validation 정리" />
   </component>
 </project>
