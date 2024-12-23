@@ -12,8 +12,9 @@ public class MemberServiceImpl implements MemberService {
     /**
      *
      * @param memberRepository
-     * MemberRepository에 대한 내용은 없어지고 오로지 MemberRepository라는 인터페이스만 있다.
-     * 즉, 추상화에만 의존하게 되면서 DIP를 지킬 수 있다.
+     * 애플리케이션 구성 정보를 담고 있는 AppConfig 클래스를 통해서 객체의 생성과 주입을 맡기게 되었다.
+     * 이를 통해서 오로지 MemberRepository 라는 추상화에만 의존하게 되므로써 실제 구현 객체가 바뀌어도 큰 문제가 되지 않는다.
+     * 즉, DIP와 OCP를 지킬 수 있게 되었다.
      */
 //    public MemberServiceImpl(MemberRepository memberRepository) {
 //        this.memberRepository = memberRepository;
