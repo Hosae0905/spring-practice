@@ -17,8 +17,8 @@ public class MemberServiceTest {
 
     @BeforeEach
     public void beforeEach() {
-        AppConfig appConfig = new AppConfig();
-        memberService = appConfig.memberService();
+        AppConfig appConfig = new AppConfig();          // 애플리케이션 구성 정보를 생성한다.
+        memberService = appConfig.memberService();      // AppConfig 객체가 생성되면서 MemberService 구현체를 주입 받을 수 있게 된다.
     }
 
     @Test

@@ -6,6 +6,10 @@
       <excludeFolder url="file://$MODULE_DIR$/../../spring-basic/.gradle" />
       <excludeFolder url="file://$MODULE_DIR$/../../spring-basic/build" />
     </content>
+    <content url="file://$MODULE_DIR$/../../spring-basic">
+      <excludeFolder url="file://$MODULE_DIR$/../../spring-basic/.gradle" />
+      <excludeFolder url="file://$MODULE_DIR$/../../spring-basic/build" />
+    </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>

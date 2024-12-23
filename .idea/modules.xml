@@ -5,6 +5,9 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/spring-basic.iml" filepath="$PROJECT_DIR$/.idea/modules/spring-basic.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/spring-basic.main.iml" filepath="$PROJECT_DIR$/.idea/modules/spring-basic.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/spring-basic.test.iml" filepath="$PROJECT_DIR$/.idea/modules/spring-basic.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-mvc/spring-mvc.iml" filepath="$PROJECT_DIR$/spring-mvc/spring-mvc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/spring-mvc.main.iml" filepath="$PROJECT_DIR$/.idea/modules/spring-mvc.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/spring-mvc.test.iml" filepath="$PROJECT_DIR$/.idea/modules/spring-mvc.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/spring-practice.iml" filepath="$PROJECT_DIR$/.idea/spring-practice.iml" />
     </modules>
   </component>

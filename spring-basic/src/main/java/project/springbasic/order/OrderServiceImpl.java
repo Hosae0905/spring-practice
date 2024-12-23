@@ -20,6 +20,15 @@ public class OrderServiceImpl implements OrderService {
     * DIP와 OCP를 위반하는 사례
     * 새로운 할인 정책을 적용했지만 추상 뿐만 아니라 구현 클래스에도 의존하기 때문에
     * 클라이언트 코드인 OrderServiceImpl 클래스에서 코드 변경이 이루어지는 문제가 발생한다.
+    *
+    * 현재 OrderServiceImpl 클래스는 DiscountPolicy 인터페이스에 의존하는 것처럼 보이지만 실제로는
+    * 해당 인터페이스의 구현체인 FixDiscountPolicy와 RateDiscountPolicy도 의존하고 있다.
+    * 즉, 추상화에 의존하고 구현체에 의존하지 않는다는 원칙인 DIP를 위반하고 있다.
+    *
+    * 만약 할인 정책이 더 많아진다면 어떨까?
+    * 할인 정책이 많아지면 기존의 discountPolicy 변수에 다른 구현 객체를 저장해야 한다.
+    * 즉, 새로운 할인 정책이 생길때마다 현재 OrderServiceImpl 클래스에 변경이 이뤄줘야 한다는 의미고
+    * 이것은 확장에는 열려있으나 변경에는 닫혀있어야 한다는 원칙인 OCP를 위반하게 된다.
     * */
 //    private final DiscountPolicy discountPolicy = new FixDiscountPolicy();
 //    private final DiscountPolicy discountPolicy = new RateDiscountPolicy();
