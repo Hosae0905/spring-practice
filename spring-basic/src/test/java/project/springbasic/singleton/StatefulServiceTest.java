@@ -23,9 +23,8 @@ class StatefulServiceTest {
 
         //TheadA: A사용자가 10000원 주문
         int userAPrice = statefulService1.order("userA", 10000);
-        //TheadB: B사용자가 10000원 주문
+        //TheadB: B사용자가 20000원 주문
         int userBPrice = statefulService2.order("userB", 20000);
-
 
 //        //ThreadA: 사용자A가 주문 금액 조회
 //        int price = statefulService1.getPrice();
