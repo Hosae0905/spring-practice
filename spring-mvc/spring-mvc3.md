@@ -55,3 +55,27 @@
 - DefaultHandlerExceptionResolver는 해당 오류를 500이 아니라 400오류로 변경해준다.
 - HandlerExceptionResolver를 직접 사용하기는 복잡하다. API 오류 응답의 경우 response에 직접 데이터를 넣어야 해서 매우 불편하고 번거롭다.
 - ModelAndView를 반환해야 하는 것도 API에 잘 맞지 않는다.
+
+### @ExceptionHandler
+- API는 단순히 HTML Form을 보여주는 것보다 훨씬 더 세밀한 작업이 필요하다.
+- 특정 컨트롤러에서만 발생하는 예외를 별도로 처리하기 어렵다.
+- 예를 들어 회원을 처리하는 컨트롤러에서 발생하는 RuntimeException과 상품을 관리하는 컨트롤러에서 발생하는 동일한 RuntimeException 예외를 서로 다른 방식으로 처리해야하는 상황이 생긴다.
+- 각각 따로 처리를 하면 너무 지저분해진다.
+- 이러한 문제를 해결하기 위해 나온 것이 @ExceptionHandler 애노테이션이다.
+- 해당 애노테이션이 붙어있으면 ExceptionHandlerExceptionResolver로 동작하게 된다.
+- 스프링에서는 ExceptionHandlerExceptionResolver를 기본으로 제공해주고 제일 우선순위가 높다.
+- ExceptionHandlerExceptionResolver가 @ExceptionHandler 애노테이션이 붙은 곳을 호출해준다.
+- @ExceptionHandler 예외 처리 방법
+  - @ExceptionHandler 애노테이션을 선언한다.
+  - 해당 컨트롤러에서 처리하고 싶은 예외를 지정해준다.
+  - 해당 컨트롤러에서 예외가 발생하면 이 메서드가 호출된다.
+  - 지정한 예외 또는 그 예외의 자식 클래스는 모두 잡을 수 있다.
+- 스프링에서 예외를 처리할 경우 우선순위는 자식예외처리가 먼저 우선권을 가지게 된다.
+- 자식 예외가 발생하면 부모예외처리(), 자식예외처리() 둘 다 호출 대상이 된다.
+- 부모 예외가 발생하면 부모예외처리()만 호출 대상이 된다.
+
+### API 예외처리 - @ControllerAdvice
+- 여러 컨트롤러에서 발생하는 예외들을 한 곳에서 처리할 수 있게 해준다.
+- @ControllerAdvice는 대상으로 지정한 여러 컨트롤러에 @ExceptionHandler, @InitBinder 기능을 부여해주는 역할을 한다.
+- 대상을 따로 지정하지 않으면 모든 컨트롤러에 모두 적용된다.
+- 패키지 경로를 지정해서 적용 대상을 직접 설정할 수 있다.
