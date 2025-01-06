@@ -72,6 +72,8 @@ public class SingletonWithPrototypeTest1 {
 
     @Scope("singleton")
     static class ClientBean {
+
+        // JSR-330 Provider
         private final Provider<PrototypeBean> prototypeBeanProvider;        // 스프링 컨테이너가 필요한 프로토타입 빈을 찾아준다.
 
         @Autowired
