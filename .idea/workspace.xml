@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="edf7b05b-6be1-4f49-88dd-96d92c0a0901" name="Changes" comment="[ADD] 스프링 MVC 2편 - 백엔드 웹 개발 활용 기술 정리&#10;&#10;- 검증2 - Bean Validation 정리">
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -19,6 +20,9 @@
       <ProjectState />
     </projectState>
     <projectState path="$PROJECT_DIR$/spring-basic">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/spring-basic-2">
       <ProjectState />
     </projectState>
     <projectState path="$PROJECT_DIR$/spring-mvc">
@@ -70,7 +74,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="practice" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -100,7 +104,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Spring Boot.SpringMvcApplication.executor": "Run",
-    "git-widget-placeholder": "spring/mvc",
+    "git-widget-placeholder": "spring/basic2",
     "ignore.virus.scanning.warn.message": "true",
     "jdk.selected.JAVA_MODULE": "corretto-17",
     "kotlin-language-version-configured": "true",
@@ -113,6 +117,7 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
+    "run.configurations.included.in.services": "true",
     "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
     "vue.rearranger.settings.migration": "true"
   }
@@ -130,6 +135,15 @@
       <recent name="project.springmvc.web.validation" />
       <recent name="project.springmvc" />
     </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="MicronautRunConfigurationType" />
+        <option value="QuarkusRunConfigurationType" />
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
   </component>
   <component name="RunManager" selected="Spring Boot.SpringMvcApplication">
     <configuration name="BeanValidationTest.beanValidation" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
@@ -252,6 +266,13 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
+    <configuration name="SpringBasic2Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="spring-basic-2.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="project.springbasic2.SpringBasic2Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SpringBasicApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="spring-basic.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="project.springbasic.SpringBasicApplication" />
@@ -304,6 +325,7 @@
       <workItem from="1734682240743" duration="5181000" />
       <workItem from="1734758809017" duration="3990000" />
       <workItem from="1734959508844" duration="63000" />
+      <workItem from="1736853935795" duration="313000" />
     </task>
     <task id="LOCAL-00001" summary="[Init] 스프링 MVC 프로젝트 생성">
       <option name="closed" value="true" />
@@ -382,6 +404,17 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="[Init] 스프링 MVC 프로젝트 생성" />
